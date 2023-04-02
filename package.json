@@ -1,0 +1,37 @@
+{
+    "name": "ten",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start:dev": "nodemon --watch \"src/**/*.ts\" --exec \"ts-node\" src/server.ts",
+        "build": "tsc -p .",
+        "start": "node build/server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "class-transformer": "^0.5.1",
+        "class-validator": "^0.14.0",
+        "cookie-parser": "^1.4.6",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "morgan": "^1.10.0",
+        "mysql2": "^3.2.0",
+        "reflect-metadata": "^0.1.13",
+        "typeorm": "^0.3.12"
+    },
+    "devDependencies": {
+        "@types/bcrypt": "^5.0.0",
+        "@types/express": "^4.17.17",
+        "@types/jsonwebtoken": "^9.0.1",
+        "@types/morgan": "^1.9.4",
+        "@types/node": "^18.15.11",
+        "nodemon": "^2.0.22",
+        "ts-node": "^10.9.1",
+        "typeorm-naming-strategies": "^4.1.0",
+        "typescript": "^5.0.3"
+    }
+}

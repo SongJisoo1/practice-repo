@@ -11,6 +11,6 @@ export const AppDataSource = new DataSource({
     database: env.database.name,
     synchronize: env.database.synchronize,
     logging: env.database.logging,
-    entities: [__dirname + "src/**/*entity{.ts,.js}"],
+    entities: [__dirname + "/../entities/*.entity{.ts,.js}"],
     namingStrategy: new SnakeNamingStrategy(),
 });

@@ -35,7 +35,7 @@ export class App {
 
     public async start(port: number, environment: string) {
         try {
-            // await AppDataSource.initialize();
+            await AppDataSource.initialize();
             this.app.listen(port, () => {
                 console.log(`🚀 App running on port ${port}`);
                 console.log(`Running in ${environment}`);
